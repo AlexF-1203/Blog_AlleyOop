@@ -133,7 +133,7 @@ nav ul li a:hover {
   content: "";
   background: rgba(255, 255, 255, 0.07);
 }
-@media screen and (max-width: 767px) {
+@media (max-width: 1200px) {
   .timeline:before {
     left: 40px;
   }
@@ -189,7 +189,7 @@ nav ul li a:hover {
 .timeline-item--active .timeline__content-title {
   margin: -50px 0 20px 0;
 }
-@media screen and (max-width: 767px) {
+@media (max-width: 1000px) {
   .timeline-item {
     align-self: baseline !important;
     width: 100%;
