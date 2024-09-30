@@ -292,7 +292,7 @@ footer {
     text-decoration: none;
   }
 
-  @media (max-width: 1200px) {
+  @media (max-width: 1300px) {
     .article-container-right, .article-container-left {
       flex-direction: column; /* Aligne les articles verticalement sur mobile */
       padding: 15px;
