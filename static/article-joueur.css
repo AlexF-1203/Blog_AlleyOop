@@ -292,6 +292,27 @@ footer {
     text-decoration: none;
   }
 
+  @media (max-width: 1200px) {
+    .article-container-right, .article-container-left {
+      flex-direction: column; /* Aligne les articles verticalement sur mobile */
+      padding: 15px;
+  }
+  .article-container-right .article-image-right, .article-container-left .article-image-left {
+      order: 1; /* Place l'image en deuxième position */
+  }
+
+  .article-container-right .article-text-right, .article-container-left .article-text-left {
+      order: 0; /* Place le texte en première position */
+  }
+  
+
+  .article-image-right, .article-image-left {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+  
+}
+
   @media (max-width: 786px) {
     nav ul {
         font-size: 1.2rem; /* Réduit la taille du texte du menu */
