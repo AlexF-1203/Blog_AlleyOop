@@ -1,0 +1,337 @@
+:root {
+    --primary-color: #3d2e75;
+    --secondary-color: #111111;
+    --light-color: #ffffff;
+    --font-title: "Lalezar", sans-serif;
+    --font-text: "Merriweather", sans-serif;
+    --font-subtitle: "Montserrat" sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden; /* Empêche le défilement horizontal */
+}
+
+body {
+    background-color: var(--light-color);
+    color: var(--secondary-color);
+    line-height: 1.6;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.titre-accueil {
+    text-align: center;
+    font-family: var(--font-title);
+    font-size: 50px;
+}
+
+.text-accueil {
+    text-align: center;
+    font-family: var(--font-text);
+    font-style: italic;
+}
+
+/* Header Section */
+header {
+    background-color: #fafafa;
+    padding: 20px 0;
+    box-shadow:  0 4px 2px -2px gray;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    font-family: "Lalezar";
+    font-style: italic;
+    font-size: 2.2rem;
+    gap: 50px;
+    margin-bottom: 1%;
+    color: var(--secondary-color)
+}
+
+.img-logo {
+    width: 50px;
+    margin-bottom: -8%;
+}
+
+
+nav ul {
+    
+    list-style: none;
+    display: flex;
+    font-size: 1.5rem;
+    gap: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: "Lalezar";
+    color: var(--secondary-color);
+    font-weight: bold;
+    padding: 10px 16px;
+    border-radius: 3px;
+    transition: background 0.3s ease;
+    
+}
+
+nav ul li a:hover {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    
+}
+
+.hero {
+    text-align: left;
+    padding: 150px 20px;
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    background-image: url('../Image/article-lebron.jpg'); 
+    background-size: cover; 
+    background-position: center;
+    font-style: italic;
+    width: 100%; /* Pour que l'image prenne toute la largeur */
+    
+}
+
+.titre-hero {
+    font-size: 4rem;
+    /* padding-left: 10%; */
+    margin-top: 1%;
+    font-family: "Lalezar";
+    color: var(--light-color);
+    text-align: center;
+}
+
+.text-hero {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: thin;
+    color: var(--light-color);
+    /* margin-top: 1%; */
+    font-family: "merriweather"; 
+}
+
+.article-zone-1 {
+    background-color: #ccc; /* couleur grise pour l'article */
+    padding: 20px 10%; /* 10% de padding à droite et à gauche */
+    margin: 50px;
+    /* margin-left: 50% ; /* centrage vertical avec un espace en haut et en bas */
+    margin-right: 5%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* ombre légère pour effet de relief */
+    border-radius: 8px; /* coins légèrement arrondis */
+}
+
+.article-zone-2 {
+    background-color: #ccc; /* couleur grise pour l'article */
+    padding: 20px 10%; /* 10% de padding à droite et à gauche */
+    margin: 50px ; /* centrage vertical avec un espace en haut et en bas */
+    margin-left: 5% ; /* centrage vertical avec un espace en haut et en bas */
+    margin-right: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* ombre légère pour effet de relief */
+    border-radius: 8px; /* coins légèrement arrondis */
+}
+
+.baby {
+    margin-right: 5%;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+p {
+    color: #555;
+    line-height: 1.6;
+   
+}
+
+.article-container-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 1%;
+}
+
+.article-text-right {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.article-text-right h2 {
+    font-family: var(--font-title);
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.article-text-right p {
+    text-align: center;
+    font-family: var(--font-text);
+    font-size: 15px;
+    line-height: 1.6;
+    color: #555;
+    text-justify:auto;
+}
+
+.article-image-right {
+    flex: 0 0 50%; /* Fixer la largeur de l'image à 40% du conteneur */
+}
+
+.article-image-right img {
+    max-width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.article-container-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 1%;
+}
+
+.article-image-left {
+    flex: 0 0 50%; /* Fixer la largeur de l'image à 40% du conteneur */
+    margin-right: 20px;
+}
+
+.article-image-left img {
+    max-width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.article-text-left {
+    flex: 1;
+}
+
+.article-text-left h2 {
+    font-family: var(--font-title);
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: center;
+}
+
+.article-text-left p {
+    text-align: center;
+    font-family: var(--font-text);
+    font-size: 15px;
+    line-height: 1.6;
+    color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+    margin-top: 40px;
+}
+
+.section {
+    height: 100vh; /* Chaque section occupe toute la hauteur de l'écran */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+  }
+  
+  #section1 {
+    background-color: #ffcccb;
+  }
+  
+  #section2 {
+    background-color: #add8e6;
+  }
+  
+  #section3 {
+    background-color: #90ee90;
+  }
+  
+  .scroll-down {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+    color: #000;
+    text-decoration: none;
+  }
+
+  @media (max-width: 786px) {
+    nav ul {
+        font-size: 1.2rem; /* Réduit la taille du texte du menu */
+    }
+  
+    .logo {
+        font-size: 0rem
+    }
+    .img-logo {
+        width: 60px;
+        margin-bottom: 5%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .logo {
+        font-size: 0rem
+    }
+  
+    .img-logo {
+        width: 40px;
+        margin-bottom: 5%;
+    }
+  
+    nav ul {
+        display:flex;
+        font-size: 0.8rem; /* Réduit la taille du texte du menu */
+    }
+  
+    nav ul li a {
+        text-decoration: none;
+        font-family: "Lalezar";
+        color: var(--secondary-color);
+        font-weight: bold;
+        padding: 1px 2px;
+        border-radius: 3px;
+        transition: background 0.3s ease;
+        
+    }
+    header {
+    padding: 5px 0;
+    }
+  }

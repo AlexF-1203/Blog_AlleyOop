@@ -1,0 +1,177 @@
+:root {
+    --primary-color: #3d2e75;
+    --secondary-color: #111111;
+    --light-color: #ffffff;
+    --font-title: "Lalezar", sans-serif;
+    --font-text: "Merriweather", sans-serif;
+    --font-subtitle: "Montserrat" sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden; /* Empêche le défilement horizontal */
+}
+
+body {
+    background-color: var(--light-color);
+    color: var(--secondary-color);
+    line-height: 1.6;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.titre-accueil {
+    text-align: center;
+    font-family: var(--font-title);
+    font-size: 50px;
+}
+
+.text-accueil {
+    text-align: center;
+    font-family: var(--font-text);
+    font-style: italic;
+}
+
+/* Header Section */
+header {
+    background-color: #fafafa;
+    padding: 20px 0;
+    box-shadow:  0 4px 2px -2px gray;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    font-family: "Lalezar";
+    font-style: italic;
+    font-size: 2.2rem;
+    gap: 50px;
+    margin-bottom: 1%;
+    color: var(--secondary-color)
+}
+
+.img-logo {
+    width: 50px;
+    margin-bottom: -8%;
+}
+
+
+nav ul {
+    
+    list-style: none;
+    display: flex;
+    font-size: 1.5rem;
+    gap: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: "Lalezar";
+    color: var(--secondary-color);
+    font-weight: bold;
+    padding: 10px 16px;
+    border-radius: 3px;
+    transition: background 0.3s ease;
+    
+}
+
+nav ul li a:hover {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    
+}
+
+.hero {
+    text-align: left;
+    padding: 150px 20px;
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    background-image: url('../Image/article-lebron.jpg'); 
+    background-size: cover; 
+    background-position: center;
+    font-style: italic;
+    width: 100%; /* Pour que l'image prenne toute la largeur */
+    
+}
+
+.titre-hero {
+    font-size: 4rem;
+    /* padding-left: 10%; */
+    margin-top: 1%;
+    font-family: "Lalezar";
+    color: var(--light-color);
+    text-align: center;
+}
+
+.text-hero {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: thin;
+    color: var(--light-color);
+    /* margin-top: 1%; */
+    font-family: "merriweather"; 
+}
+
+  .section {
+    height: 100vh; /* Chaque section occupe toute la hauteur de l'écran */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .content {
+    display: flex;
+    align-items: center;
+    width: 80%; /* Ajustez selon vos besoins */
+  }
+  
+  .text {
+    flex: 1;
+    padding: 20px;
+    font-size: 1.5rem;
+  }
+  
+  .image {
+    flex: 1;
+    max-width: 100%; /* S'assure que l'image ne dépasse pas */
+    height: auto; /* Gardez les proportions de l'image */
+  }
+  
+  #section1 {
+    background-color: #ffcccb;
+  }
+  
+  #section2 {
+    background-color: #add8e6;
+  }
+  
+  #section3 {
+    background-color: #90ee90;
+  }
+  
+  .scroll-down {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+    color: #000;
+    text-decoration: none;
+  }
+  
