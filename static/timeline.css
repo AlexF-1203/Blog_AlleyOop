@@ -204,7 +204,7 @@ nav ul li a:hover {
     border: none !important;
   }
   .timeline-item:last-child {
-    padding-bottom: 40px;
+    padding-bottom: 200px;
   }
 }
 .timeline__img {
