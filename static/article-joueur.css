@@ -190,7 +190,7 @@ p {
     color: #333;
 }
 
-.article-text-right p {
+.article-text-right  {
     text-align: center;
     font-family: var(--font-text);
     font-size: 15px;
@@ -246,7 +246,7 @@ p {
     text-align: center;
 }
 
-.article-text-left p {
+.article-text-left  {
     text-align: center;
     font-family: var(--font-text);
     font-size: 15px;
