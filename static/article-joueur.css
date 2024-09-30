@@ -304,6 +304,9 @@ footer {
   .article-container-right .article-text-right, .article-container-left .article-text-left {
       order: 0; /* Place le texte en première position */
   }
+  .article-text-left p , .article-text-right p  {
+    font-size: 10px;
+  }
   
 
   .article-image-right, .article-image-left {
